@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:functions/pages/ImageConverter.dart';
 import 'package:functions/pages/youtubeTranslator.dart';
 
+/*
+git add .
+git commit -m "first commit"
+git push -u origin main
+ */
+// flutter build web --release 를 입력해야 웹용 컴파일이됨 // https://dajoonee.tistory.com/35
 
 int _currentIndex = 0;
 
