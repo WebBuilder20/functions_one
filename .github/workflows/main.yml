@@ -24,7 +24,7 @@ jobs:
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
           git status
-          git remote add main https://github.com/WebBuilder20/functions_one.git
+          git remote add main git@github.com:WebBuilder20/functions_one.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
