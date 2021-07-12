@@ -19,7 +19,7 @@ jobs:
       - run: flutter build web --release
         working-directory: ./functions_one
       - run: |
-          cd functions/web
+          cd build/web
           git init
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
