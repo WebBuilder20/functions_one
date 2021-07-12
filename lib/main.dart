@@ -99,7 +99,6 @@ class _MyAppState extends State<MyApp> {
                               color: (_currentIndex == index) ? Colors.cyan : Colors.black87),
                           ),
                           onTap: () {
-                            print(_currentIndex);
                             setState(() {
                               _currentIndex = index;
                             });
