@@ -1,0 +1,33 @@
+name: Flutter Web
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build Web
+    env:
+      my_secret: $
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'dev'
+      - run: flutter config --enable-web
+      - run: flutter pub get
+      - run: flutter build web --release
+        # 1. change path which exist lib/main.dart
+        # cd functions/web 이거 안되면 -> change path to [existed lib/main.dart path]/build/web
+        working-directory: ./functions
+      - run: |
+          cd functions/web
+          git init
+          git config --global user.email localhost.ads@gmail.com
+          git config --global user.name WebBuilder20
+          git status
+          git remote add origin https://github.com/WebBuilder20/functions_one.git
+          git checkout -b gh-pages
+          git add --all
+          git commit -m "update"
+          git push origin gh-pages -f
