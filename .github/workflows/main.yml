@@ -24,9 +24,8 @@ jobs:
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
           git status
-          # 5. change your repository
-          git remote add origin https://github.com/WebBuilder20/functions_one.git
+          git remote add main https://github.com/WebBuilder20/functions_one.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
-          git push origin gh-pages -f
+          git push main gh-pages -f
