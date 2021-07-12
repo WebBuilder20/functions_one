@@ -19,6 +19,11 @@ jobs:
       - run: flutter build web --release
         working-directory: ./functions_one
       - run: |
+          git remote -v
+          origin git@github.com:WebBuilder20/functions_one.git (fetch)
+          origin git@github.com:WebBuilder20/functions_one.git (push)
+          git remote set-url origin git@github.com:WebBuilder20/functions_one.git git push -u main main
+
           cd build/web
           git init
           git config --global user.email localhost.ads@gmail.com
