@@ -21,7 +21,7 @@ jobs:
       - run: |
           git remote -v
           git remote set-url origin git@github.com:WebBuilder20/functions_one.git
-          git push main main
+          git push origin main
 
           cd build/web
           git init
@@ -29,6 +29,9 @@ jobs:
           git config --global user.name WebBuilder20
           git status
           git remote add main git@github.com:WebBuilder20/functions_one.git
+          git remote set-url main git@github.com:WebBuilder20/functions_one.git
+          git remote -v
+
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
