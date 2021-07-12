@@ -19,7 +19,7 @@ jobs:
       - run: flutter build web --release
         working-directory: ./functions_one
       - run: |
-          cd build/web
+          cd functions_one/build/web
           git config --global init.defaultBranch master
           git branch -m master
           git init
