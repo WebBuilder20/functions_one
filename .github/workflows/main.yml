@@ -19,14 +19,17 @@ jobs:
       - run: flutter build web --release
         working-directory: ./functions_one
       - run: |
+          cd build/web
+          git init
+
           git remote -v
+          git add .
+          git commit -m "message"
+          git config --global user.email localhost.ads@gmail.com
+          git config --global user.name WebBuilder20
           git remote set-url origin git@github.com:WebBuilder20/functions_one.git
           git push origin main
 
-          cd build/web
-          git init
-          git config --global user.email localhost.ads@gmail.com
-          git config --global user.name WebBuilder20
           git status
           git remote add origin git@github.com:WebBuilder20/functions_one.git
           git checkout -b gh-pages
