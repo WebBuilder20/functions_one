@@ -21,7 +21,7 @@ jobs:
         # cd functions/web 이거 안되면 -> change path to [existed lib/main.dart path]/build/web
         working-directory: ./functions
       - run: |
-          cd ./functions/lib/main.dart/build/web
+          cd functions/lib/main.dart/build/web
           git init
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
