@@ -20,9 +20,8 @@ jobs:
         working-directory: ./functions_one
       - run: |
           git remote -v
-          origin git@github.com:WebBuilder20/functions_one.git (fetch)
-          origin git@github.com:WebBuilder20/functions_one.git (push)
-          git remote set-url origin git@github.com:WebBuilder20/functions_one.git git push -u main main
+          git remote set-url origin git@github.com:WebBuilder20/functions_one.git
+          git push main main
 
           cd build/web
           git init
