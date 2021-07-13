@@ -15,8 +15,8 @@ class _YoutubeTransState extends State<YoutubeTrans> {
   final _formKey = GlobalKey<FormState>();
   final _sourceCodeController = TextEditingController();
   final _convertedController = TextEditingController();
-  final _widthValueController = TextEditingController();
-  final _heightValueController = TextEditingController();
+  final _widthValueController = TextEditingController(text: 1500.toString());
+  final _heightValueController = TextEditingController(text: 800.toString());
 
   final _dropDownValue = ['가로 길이에 맞춤', '세로 길이에 맞춤', '사용자 맞춤 설정', '변경 없음'];
   var _selectedValue = '가로 길이에 맞춤';
@@ -66,12 +66,6 @@ class _YoutubeTransState extends State<YoutubeTrans> {
     return GestureDetector(
       onTap: () {
         FocusManager.instance.primaryFocus?.unfocus();
-        /*
-          FocusScopeNode currentFocus = FocusScope.of(context);
-          if (!currentFocus.hasPrimaryFocus) {
-            currentFocus.unfocus();
-            }
-               */
       },
       child: Container(
         color: Color(0xffe8ebed),
@@ -89,9 +83,6 @@ class _YoutubeTransState extends State<YoutubeTrans> {
                           color: Colors.black87,
                           fontWeight: FontWeight.bold)),
                   SizedBox(height: 13),
-                  Container(
-                      // TODO:  Switches
-                      ),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -174,14 +165,6 @@ class _YoutubeTransState extends State<YoutubeTrans> {
                           SizedBox(width: 80),
                           Row(
                             children: [
-                              // Checkbox(value: resize, onChanged: (value){
-                              //   if (value != null) {
-                              //     setState(() {
-                              //       resize = value;
-                              //     });
-                              //   }
-                              // }),
-                              // SizedBox(width: 8),
                               Text(
                                 "동영상 사이즈 변경 : ",
                                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black54),

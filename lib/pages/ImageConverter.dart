@@ -100,7 +100,7 @@ class _ImageConverterState extends State<ImageConverter> {
                                 }),
                             SizedBox(width: 25),
                             if (_selectedValue == "가로 길이에 맞춤")
-                              whTextField(_widthValueController, "가    로", false),
+                              whTextField(_widthValueController, "가    로"),
 
                             if (_selectedValue == "세로 길이에 맞춤")
                               whTextField(_heightValueController, "세    로"),
@@ -124,7 +124,7 @@ class _ImageConverterState extends State<ImageConverter> {
                                     Colors.cyan)),
                             onPressed: () {
                               _formKey.currentState!.validate();
-                              // TODO: validator(on error -> alert) 이후 변환 코드
+                              // TODO: validator(on error -> alert) 이후 변환 코드 실
                             },
                             child: Text(
                               "변 환",
