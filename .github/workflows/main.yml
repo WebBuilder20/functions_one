@@ -32,13 +32,14 @@ jobs:
 
           git remote set-url origin git@github.com:WebBuilder20/functions_one.git
 
-          git add .
-          git commit -m "message"
-          git push origin main
-
-          git init
 
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
           git push origin gh-pages -f
+
+          git add .
+          git commit -m "message"
+          git push origin main
+
+          git init
