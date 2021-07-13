@@ -29,10 +29,9 @@ jobs:
           git config --global init.defaultBranch origin
           git remote -v
           git status
-          git remote set-url main git@github.com:WebBuilder20/functions_one.git
-
+          git remote set-url origin git@github.com:WebBuilder20/functions_one.git
 
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
-          git push main gh-pages -f
+          git push origin gh-pages -f
