@@ -33,4 +33,4 @@ jobs:
           git checkout -b gh-pages
           git add .
           git commit -m "update"
-          git push origin gh-pages -f
+          git push main gh-pages -f
