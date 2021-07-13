@@ -21,12 +21,12 @@ jobs:
       - run: |
           cd build/web
 
-          git remote add origin https://$@github.com/Origogi/Vertical_Card_Pager.git
-          git remote set-url origin git@github.com:WebBuilder20/functions_one.git
-
           git init
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
+
+          git remote add origin https://$@github.com/Origogi/Vertical_Card_Pager.git
+          git remote set-url origin git@github.com:WebBuilder20/functions_one.git
 
           git remote -v
           git config --global init.defaultBranch origin
