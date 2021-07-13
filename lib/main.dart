@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:functions/pages/ImageConverter.dart';
 import 'package:functions/pages/youtubeTranslator.dart';
 
+// flutter run -d chrome
+
 /*
 git add .
 git commit -m "first commit"
