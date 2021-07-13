@@ -26,7 +26,7 @@ class _YoutubeTransState extends State<YoutubeTrans> {
   var regHeight = RegExp(r'(?:height\s*=\s*)"(\d+)"');
 
   String convertSC() {
-    String sc = _sourceCodeController.text.toLowerCase();
+    String sc = _sourceCodeController.text;
     int _oriWidth = int.parse(regWidth.firstMatch(sc)!.group(1)!);
     int _oriHeight = int.parse(regHeight.firstMatch(sc)!.group(1)!);
     String? _youtubeID = _regID.firstMatch(sc)!.group(1);

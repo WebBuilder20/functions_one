@@ -3,6 +3,7 @@ import 'package:functions/pages/ImageConverter.dart';
 import 'package:functions/pages/youtubeTranslator.dart';
 
 // flutter run -d chrome
+// flutter build web --release
 
 /*
 git add .
