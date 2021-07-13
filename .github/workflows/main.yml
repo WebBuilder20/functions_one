@@ -22,17 +22,17 @@ jobs:
           cd build/web
 
           git init
+
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
-
-          git remote add webpuv https://$@github.com/Origogi/Vertical_Card_Pager.git
-          git remote set-url webpuv git@github.com:WebBuilder20/functions_one.git
-          git config --global init.defaultBranch webpuv
-
+          git remote -v
+          git config --global init.defaultBranch origin
           git remote -v
           git status
+          git remote set-url origin git@github.com:WebBuilder20/functions_one.git
+
 
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
-          git push webpuv gh-pages -f
+          git push origin gh-pages -f
