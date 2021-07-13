@@ -21,6 +21,8 @@ jobs:
       - run: |
           cd build/web
           git init
+          git add --all
+          git commit -m "update"
           git config --global hub.protocol https
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
@@ -32,6 +34,4 @@ jobs:
           git remote -v
           git ls-remote https://github.com/WebBuilder20/functions_one.git
           git checkout -b gh-pages
-          git add --all
-          git commit -m "update"
           git push origin gh-pages -f
