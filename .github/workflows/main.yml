@@ -11,6 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: subosito/flutter-action@v1
+      - run: flutter config --enable-web
+      - run: flutter pub get
+      - run: flutter build web --release
+          working-directory: ./functions_one
       - uses: erickzanardo/flutter-gh-pages@v3
         with:
           workingDir: ./functions_one
