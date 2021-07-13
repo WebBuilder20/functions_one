@@ -204,18 +204,18 @@ class _YoutubeTransState extends State<YoutubeTrans> {
                                     }),
                               SizedBox(width: 25),
                               if (_selectedValue == "가로 길이에 맞춤")
-                                whTextField(_widthValueController, "가    로", true),
+                                whTextField(_widthValueController, "가    로"),
 
                               if (_selectedValue == "세로 길이에 맞춤")
-                                whTextField(_heightValueController, "세    로", false),
+                                whTextField(_heightValueController, "세    로"),
 
                               if (_selectedValue == "사용자 맞춤 설정")
                                 Row(children: [
-                                  whTextField(_widthValueController, "가    로", false),
+                                  whTextField(_widthValueController, "가    로"),
                                   SizedBox(width: 14),
                                   Text("x"),
                                   SizedBox(width: 14),
-                                  whTextField(_heightValueController, "세    로", false),
+                                  whTextField(_heightValueController, "세    로"),
                                 ])
                             ],
                           )

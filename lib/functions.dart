@@ -24,18 +24,17 @@ Future<dynamic> alertBox(BuildContext context, String title, String content) {
   );
 }
 
-Widget whTextField (TextEditingController controller, String hintText, bool initialV) {
+Widget whTextField (TextEditingController controller, String hintText) {
   return Padding(
     padding: EdgeInsets.only(top: 19, bottom: 0, left: 0, right: 0),
     child: Container(
       height: 25,
       width: 80,
       child: TextFormField(
-        initialValue: (initialV)? "1500": null,
+        controller: controller,
         textAlign: TextAlign.center,
         style: TextStyle(color: Colors.black45),
         textAlignVertical: TextAlignVertical.bottom,
-        controller: controller,
         inputFormatters: <TextInputFormatter>[
           FilteringTextInputFormatter.digitsOnly,
         ],

@@ -103,15 +103,15 @@ class _ImageConverterState extends State<ImageConverter> {
                               whTextField(_widthValueController, "가    로", false),
 
                             if (_selectedValue == "세로 길이에 맞춤")
-                              whTextField(_heightValueController, "세    로", false),
+                              whTextField(_heightValueController, "세    로"),
 
                             if (_selectedValue == "사용자 맞춤 설정")
                               Row(children: [
-                                whTextField(_widthValueController, "가    로", false),
+                                whTextField(_widthValueController, "가    로"),
                                 SizedBox(width: 14),
                                 Text("x"),
                                 SizedBox(width: 14),
-                                whTextField(_heightValueController, "세    로", false),
+                                whTextField(_heightValueController, "세    로"),
                               ]),
                           ]),
                       SizedBox(
@@ -124,7 +124,7 @@ class _ImageConverterState extends State<ImageConverter> {
                                     Colors.cyan)),
                             onPressed: () {
                               _formKey.currentState!.validate();
-                              // TODO: validator(on error -> alert) 이후 변환 코드 실
+                              // TODO: validator(on error -> alert) 이후 변환 코드
                             },
                             child: Text(
                               "변 환",
