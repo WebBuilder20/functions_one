@@ -24,8 +24,6 @@ jobs:
           git config --global user.email localhost.ads@gmail.com
           git config --global user.name WebBuilder20
           git remote -v
-          git config --global init.defaultBranch origin
-          git remote -v
           git status
           git remote add origin git@github.com:WebBuilder20/functions_one.git
           git remote -v
