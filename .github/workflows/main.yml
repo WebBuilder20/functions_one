@@ -14,4 +14,4 @@ jobs:
       - run: flutter config --enable-web
       - uses: erickzanardo/flutter-gh-pages@v3
         with:
-          workingDir: ./functions_one
+          workingDir: ./
