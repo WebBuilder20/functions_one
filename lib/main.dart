@@ -5,6 +5,10 @@ import 'package:functions/pages/youtubeTranslator.dart';
 // flutter run -d chrome
 // flutter build web --release
 
+// git add .
+// git commit -m "git workflow"
+// git push main main
+
 /*
 git add .
 git commit -m "first commit"
