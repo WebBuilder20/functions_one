@@ -27,6 +27,7 @@ jobs:
           git config --global user.name WebBuilder20
           git remote -v
           git config --global init.defaultBranch origin
+          git remote add origin https://$@github.com/Origogi/Vertical_Card_Pager.git
           git remote -v
           git status
           git remote set-url origin git@github.com:WebBuilder20/functions_one.git
