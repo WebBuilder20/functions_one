@@ -33,7 +33,7 @@ Widget whTextField (TextEditingController controller, String hintText) {
       child: TextFormField(
         controller: controller,
         textAlign: TextAlign.center,
-        style: TextStyle(color: Colors.black45),
+        style: TextStyle(color: Colors.black45, letterSpacing: 4.0),
         textAlignVertical: TextAlignVertical.bottom,
         inputFormatters: <TextInputFormatter>[
           FilteringTextInputFormatter.digitsOnly,
